@@ -1,0 +1,16 @@
+{% load static tailwind_tags %}
+
+<html>
+<head>
+    <title>Image Enhancer</title>
+    {% tailwind_css %}
+</head>
+<body>
+ <header class="flex justify-between items-center w-full mt-5 border-b-2 pb-7 sm:px-4 px-2">
+    <a href="{% url '' %}" class="sm:text-5xl text-3xl font-bold ml-2 tracking-tight">Enhancer</a>
+    <nav class="flex items-center space-x-4">
+      <img src="{% static 'vercelLogo.png' %}" alt="logo" class="w-32 h-28 sm:w-10 sm:h-[34px] w-8 h-[28px]">
+    </nav>
+  </header>
+</body>
+</html>
